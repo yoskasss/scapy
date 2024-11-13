@@ -4,7 +4,7 @@ eth = Ether()  # Ethernet çerçevesi (frame) oluştur
 arp = ARP()    # ARP (Address Resolution Protocol) paketi oluştur
 
 eth.dst = "ff:ff:ff:ff:ff:ff"  # Ethernet çerçevesinin hedef adresini "ff:ff:ff:ff:ff:ff" (broadcast) olarak ayarla
-arp.pdst = "192.168.32.1/24"     # ARP paketinde hedef IP adresini "10.10.10.1/24" ağı olarak ayarla
+arp.pdst = "10.10.10.1/24"     # ARP paketinde hedef IP adresini "10.10.10.1/24" ağı olarak ayarla
 
 bcPckt = eth / arp  # Ethernet ve ARP katmanlarını birleştirerek bir yayın (broadcast) paketi oluştur
 
